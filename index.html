@@ -84,11 +84,14 @@ footer{padding-block:22px; font-size:13px; color:var(--grey); text-align:center;
 .sheet th{font-family:var(--head); font-weight:400; font-size:15px; text-align:left; padding:16px 0 6px; border-bottom:2px solid var(--black)}
 .sheet td{padding:9px 0; border-bottom:1px solid var(--line); font-size:15.5px}
 .sheet td small{color:var(--grey); font-size:13.5px; margin-left:6px}
-.sheet td.amt{text-align:right; white-space:nowrap; font-weight:700}
+.sheet td.amt{text-align:right; white-space:nowrap; font-weight:700; padding-left:14px}
+.sheet th.col{text-align:right; width:110px}
+.sheet td.dim{color:var(--grey); font-weight:500}
+.sheet tr.grp td{font-family:var(--head); font-size:13px; letter-spacing:.02em; padding-top:16px; border-bottom:1px solid var(--black)}
 .sheet tr.sum td{border-bottom:0; font-weight:700}
-.sheet tr.net td{border-top:2px solid var(--black); border-bottom:0; padding-top:14px; font-family:var(--head); font-size:20px}
+.sheet tr.net td{border-top:2px solid var(--black); border-bottom:0; padding-top:14px; font-family:var(--head); font-size:19px}
 .sheet tr.net td.amt span{background:var(--sun); border-radius:999px; padding:2px 14px}
-@media (max-width:520px){ .sheet{padding-inline:16px} .sheet td small{display:block; margin-left:0} }
+@media (max-width:520px){ .sheet{padding-inline:14px} .sheet td small{display:block; margin-left:0} .sheet th.col{width:auto} .sheet td,.sheet th{font-size:14px} .sheet tr.net td{font-size:16px} }
 </style>
 </head>
 <body>
@@ -124,29 +127,34 @@ footer{padding-block:22px; font-size:13px; color:var(--grey); text-align:center;
 
   <section>
     <h2>The math</h2>
-    <p class="lead">One sold-out night, worked out from your public ticket tiers and what things cost in LA. Sponsors can cover the night with product or cash.</p>
+    <p class="lead">One sold-out night today, and the same night next season with three changes. Sponsors can cover the night with product or cash.</p>
     <div class="math">
-      <div class="num"><strong>~$9.7K</strong><span>in from tickets, bar and merch</span></div>
-      <div class="num"><strong>~$5.8K</strong><span>to make the night happen</span></div>
-      <div class="num sun"><strong>~$3.9K</strong><span>left over, before any sponsor cash</span></div>
+      <div class="num"><strong>~$3.9K</strong><span>net per show today</span></div>
+      <div class="num sun"><strong>~$9.8K</strong><span>net per show next season, same room</span></div>
+      <div class="num"><strong>3</strong><span>moves: sponsor cash, smarter pricing, an Artist Fund</span></div>
     </div>
     <div class="sheet">
       <table>
-        <tr><th colspan="2">Top sheet · Oct 24</th></tr>
-        <tr><td>Tickets <small>200 across four tiers</small></td><td class="amt">$8,560</td></tr>
-        <tr><td>Bar and snack add-ons <small>est., beyond what the ticket includes</small></td><td class="amt">$600</td></tr>
-        <tr><td>Merch <small>est., tees and totes</small></td><td class="amt">$500</td></tr>
-        <tr><td>Sponsors <small>product or cash</small></td><td class="amt">In-kind</td></tr>
-        <tr class="sum"><td>Income</td><td class="amt">$9,660</td></tr>
-        <tr><td>Talent <small>headliner, guest, house band, MC and live art</small></td><td class="amt">$1,275</td></tr>
-        <tr><td>Venue</td><td class="amt">$1,200</td></tr>
-        <tr><td>Production <small>sound, bartenders, door and ID, insurance</small></td><td class="amt">$1,460</td></tr>
-        <tr><td>Show extras <small>decor, costume prize, supplies, crew meal</small></td><td class="amt">$700</td></tr>
-        <tr><td>Photo, marketing and ops</td><td class="amt">$640</td></tr>
-        <tr><td>Merch stock</td><td class="amt">$200</td></tr>
-        <tr><td>Ticket processing</td><td class="amt">$300</td></tr>
-        <tr class="sum"><td>Expenses</td><td class="amt">$5,775</td></tr>
-        <tr class="net"><td>Net per show</td><td class="amt"><span>$3,885</span></td></tr>
+        <tr><th>Top sheet · per show</th><th class="col">Today</th><th class="col">Next season</th></tr>
+        <tr class="grp"><td colspan="3">Income</td></tr>
+        <tr><td>Tickets <small>200 · small price bump next season</small></td><td class="amt">$8,560</td><td class="amt">$9,400</td></tr>
+        <tr><td>VIP tier <small>20 upgrades</small></td><td class="amt dim">—</td><td class="amt">$800</td></tr>
+        <tr><td>Bar and snack add-ons <small>est., beyond what the ticket includes</small></td><td class="amt">$600</td><td class="amt">$700</td></tr>
+        <tr><td>Merch <small>est.</small></td><td class="amt">$500</td><td class="amt">$600</td></tr>
+        <tr><td>Presenting partner <small>cash</small></td><td class="amt dim">In-kind</td><td class="amt">$1,500</td></tr>
+        <tr><td>Bar partners <small>cash on top of product</small></td><td class="amt dim">In-kind</td><td class="amt">$900</td></tr>
+        <tr><td>Artist Fund <small>sponsor-paid artist guarantees</small></td><td class="amt dim">—</td><td class="amt">$1,500</td></tr>
+        <tr class="sum"><td>Income</td><td class="amt">$9,660</td><td class="amt">$15,400</td></tr>
+        <tr class="grp"><td colspan="3">Expenses</td></tr>
+        <tr><td>Talent <small>headliner, guest, house band, MC and live art</small></td><td class="amt">$1,275</td><td class="amt">$1,800</td></tr>
+        <tr><td>Venue</td><td class="amt">$1,200</td><td class="amt">$1,200</td></tr>
+        <tr><td>Production <small>sound, bar staff, door, insurance</small></td><td class="amt">$1,460</td><td class="amt">$1,060</td></tr>
+        <tr><td>Show extras <small>decor, prizes, supplies, crew meal</small></td><td class="amt">$700</td><td class="amt">$700</td></tr>
+        <tr><td>Photo, marketing and ops</td><td class="amt">$640</td><td class="amt">$640</td></tr>
+        <tr><td>Merch stock</td><td class="amt">$200</td><td class="amt">$240</td></tr>
+        <tr><td>Ticket processing <small>passed to buyers next season</small></td><td class="amt">$300</td><td class="amt">$0</td></tr>
+        <tr class="sum"><td>Expenses</td><td class="amt">$5,775</td><td class="amt">$5,640</td></tr>
+        <tr class="net"><td>Net per show</td><td class="amt">$3,885</td><td class="amt"><span>$9,760</span></td></tr>
       </table>
     </div>
     <p class="fine">These are my estimates, not your books. I've brought beverage partners like Diageo and Summer Club onto my own productions, and I see real room to grow with them and other local brands.</p>
