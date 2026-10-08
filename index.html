@@ -77,6 +77,18 @@ section .lead{margin-top:12px; color:var(--grey); max-width:36em}
 .pill:focus-visible{outline:3px solid var(--white); outline-offset:3px}
 .contact{margin-top:14px; font-size:15px; color:#BDBDBA}
 footer{padding-block:22px; font-size:13px; color:var(--grey); text-align:center; background:var(--paper)}
+
+/* top sheet */
+.sheet{margin-top:18px; background:var(--white); border-radius:18px; padding:8px 22px 14px}
+.sheet table{width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums}
+.sheet th{font-family:var(--head); font-weight:400; font-size:15px; text-align:left; padding:16px 0 6px; border-bottom:2px solid var(--black)}
+.sheet td{padding:9px 0; border-bottom:1px solid var(--line); font-size:15.5px}
+.sheet td small{color:var(--grey); font-size:13.5px; margin-left:6px}
+.sheet td.amt{text-align:right; white-space:nowrap; font-weight:700}
+.sheet tr.sum td{border-bottom:0; font-weight:700}
+.sheet tr.net td{border-top:2px solid var(--black); border-bottom:0; padding-top:14px; font-family:var(--head); font-size:20px}
+.sheet tr.net td.amt span{background:var(--sun); border-radius:999px; padding:2px 14px}
+@media (max-width:520px){ .sheet{padding-inline:16px} .sheet td small{display:block; margin-left:0} }
 </style>
 </head>
 <body>
@@ -111,12 +123,28 @@ footer{padding-block:22px; font-size:13px; color:var(--grey); text-align:center;
   </section>
 
   <section>
-    <h2>The math, roughly</h2>
+    <h2>The math</h2>
     <p class="lead">One sold-out night, worked out from your public ticket tiers and what things cost in LA.</p>
     <div class="math">
       <div class="num"><strong>~$8.6K</strong><span>in from 200 tickets</span></div>
       <div class="num"><strong>~$5.6K</strong><span>to make the night happen</span></div>
       <div class="num sun"><strong>~$3K</strong><span>left over, before a single sponsor dollar</span></div>
+    </div>
+    <div class="sheet">
+      <table>
+        <tr><th colspan="2">Top sheet · Oct 24</th></tr>
+        <tr><td>Tickets <small>200 across four tiers</small></td><td class="amt">$8,560</td></tr>
+        <tr><td>Sponsor cash <small>product only today</small></td><td class="amt">$0</td></tr>
+        <tr class="sum"><td>Income</td><td class="amt">$8,560</td></tr>
+        <tr><td>Talent <small>headliner, guest, house band, MC and live art</small></td><td class="amt">$1,275</td></tr>
+        <tr><td>Venue</td><td class="amt">$1,200</td></tr>
+        <tr><td>Production <small>sound, bartenders, door and ID, insurance</small></td><td class="amt">$1,460</td></tr>
+        <tr><td>Show extras <small>decor, costume prize, supplies, crew meal</small></td><td class="amt">$700</td></tr>
+        <tr><td>Photo, marketing and ops</td><td class="amt">$640</td></tr>
+        <tr><td>Ticket processing</td><td class="amt">$300</td></tr>
+        <tr class="sum"><td>Expenses</td><td class="amt">$5,575</td></tr>
+        <tr class="net"><td>Net per show</td><td class="amt"><span>$2,985</span></td></tr>
+      </table>
     </div>
     <p class="fine">These are my estimates, not your books. I've brought beverage partners like Diageo and Summer Club onto my own productions, and I see real room to grow with them and other local brands.</p>
   </section>
