@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>The Halloween Jam, On Paper</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Figtree:ital,wght@0,400;0,500;0,700;1,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#000000; --white:#FFFFFF; --paper:#F4F4F3; --sun:#FFC700; --grey:#5E5E5C; --line:#DADAD6;
+  --head:"Archivo Black", "Arial Black", Impact, sans-serif;
+  --body:"Figtree", "Proxima Nova", "Helvetica Neue", Arial, sans-serif;
+  color-scheme: light;
+}
+*{box-sizing:border-box}
+html,body{margin:0; -webkit-print-color-adjust:exact; print-color-adjust:exact}
+@page{margin:0}
+body{background:var(--paper); color:var(--black); font-family:var(--body); font-size:17px; line-height:1.55; font-weight:500}
+h1,h2,h3{font-family:var(--head); font-weight:400; margin:0; text-wrap:balance; line-height:1.02}
+p{margin:0}
+.wrap{max-width:860px; margin:0 auto; padding-inline:22px}
+
+/* hero: black, big type, like their homepage */
+.hero{background:var(--black); color:var(--white); padding-block:56px 0}
+.hero .from{font-size:14px; letter-spacing:.02em; color:#BDBDBA}
+.hero .from b{color:var(--white); font-weight:700}
+.hero h1{font-size:clamp(46px,9.5vw,104px); margin-top:22px; letter-spacing:-.01em}
+.hero h1 span{color:var(--sun)}
+.hero .sub{max-width:34em; margin-top:22px; font-size:19px; color:#E9E9E6}
+.chips{display:flex; flex-wrap:wrap; gap:10px; margin-top:28px; padding-bottom:64px}
+.chip{border:1.5px solid #3A3A3A; border-radius:999px; padding:6px 14px; font-size:14px; font-weight:700; color:var(--white)}
+.wave{display:block; width:100%; height:70px; background:var(--black)}
+.wave path{fill:var(--paper)}
+
+section{padding-block:56px 8px}
+section h2{font-size:clamp(30px,5vw,44px)}
+section .lead{margin-top:12px; color:var(--grey); max-width:36em}
+
+/* the night */
+.night{margin-top:28px; border-top:2px solid var(--black)}
+.cue{display:grid; grid-template-columns:96px 1fr; gap:16px; padding-block:14px; border-bottom:1px solid var(--line); align-items:baseline}
+.cue time{font-family:var(--head); font-size:19px}
+.cue.big{background:var(--white); margin-inline:-14px; padding-inline:14px; border-radius:14px; border-bottom-color:transparent}
+.cue.big time{color:var(--black)}
+.cue .what b{font-weight:700}
+.cue .what small{display:block; color:var(--grey); font-size:14.5px; margin-top:2px}
+.more{margin-top:16px; font-size:15px; color:var(--grey); font-style:italic}
+
+/* the math */
+.math{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:28px}
+@media (max-width:640px){ .math{grid-template-columns:1fr} }
+.num{background:var(--white); border-radius:18px; padding:22px 20px}
+.num strong{display:block; font-family:var(--head); font-size:clamp(34px,5vw,46px); line-height:1}
+.num span{display:block; margin-top:8px; font-size:15px; color:var(--grey)}
+.num.sun{background:var(--sun)}
+.num.sun span{color:var(--black)}
+.fine{margin-top:16px; font-size:14px; color:var(--grey); max-width:44em}
+
+/* three things */
+.three{display:grid; gap:0; margin-top:24px; border-top:2px solid var(--black)}
+.thing{display:grid; grid-template-columns:64px 1fr; gap:14px; padding-block:22px; border-bottom:1px solid var(--line)}
+.thing .n{font-family:var(--head); font-size:34px; line-height:1}
+.thing h3{font-size:22px}
+.thing p{margin-top:6px; color:#2A2A2A}
+
+/* close */
+.close{background:var(--black); color:var(--white); margin-top:72px}
+.close .wave{background:var(--paper)}
+.close .wave path{fill:var(--black)}
+.close .inner{padding-block:24px 64px; text-align:center}
+.close h2{font-size:clamp(34px,6vw,58px)}
+.close p{margin:16px auto 0; max-width:30em; color:#E9E9E6}
+.pill{display:inline-block; margin-top:28px; background:var(--sun); color:var(--black); font-family:var(--head); font-size:18px; padding:14px 28px; border-radius:999px; text-decoration:none; user-select:all}
+.pill:focus-visible{outline:3px solid var(--white); outline-offset:3px}
+.contact{margin-top:14px; font-size:15px; color:#BDBDBA}
+footer{padding-block:22px; font-size:13px; color:var(--grey); text-align:center; background:var(--paper)}
+</style>
+</head>
+<body>
+
+
+<header class="hero">
+  <div class="wrap">
+    <p class="from">For Ellen &amp; the Silverlake Jams team, from <b>Cronin Cullen</b></p>
+    <h1>The Halloween Jam, <span>on paper.</span></h1>
+    <p class="sub">A quick look at how I'd run October 24th, and how the same playbook gets the Jams to two to four shows a month without losing any of the magic.</p>
+    <div class="chips"><span class="chip">Sat 10.24</span><span class="chip">512 N Hoover</span><span class="chip">200 friends-to-be</span><span class="chip">Theme: Magic</span></div>
+  </div>
+</header>
+<svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0,40 C240,80 480,0 720,30 C960,60 1200,10 1440,36 L1440,70 L0,70 Z"/></svg>
+
+<main class="wrap">
+
+  <section>
+    <h2>The night</h2>
+    <p class="lead">Every Jam runs on a clock. Here are the beats that matter, from load-in to the walk to the afterparty.</p>
+    <div class="night">
+      <div class="cue"><time>2:00</time><div class="what"><b>Load-in and venue walkthrough</b><small>Photos of the space before we touch anything</small></div></div>
+      <div class="cue"><time>4:30</time><div class="what"><b>Soundcheck</b><small>Headliner first, Ellen last</small></div></div>
+      <div class="cue"><time>6:45</time><div class="what"><b>Team huddle</b><small>Roles, bar policy, the neighbor plan</small></div></div>
+      <div class="cue big"><time>7:15</time><div class="what"><b>Doors</b><small>Bar open, poet and portraits set up, photographers rolling</small></div></div>
+      <div class="cue big"><time>8:00</time><div class="what"><b>Ellen opens the show</b></div></div>
+      <div class="cue big"><time>8:45</time><div class="what"><b>Pitch Your Friends, then the "Magic" costume contest</b></div></div>
+      <div class="cue big"><time>9:10</time><div class="what"><b>Headliner with the house band</b></div></div>
+      <div class="cue"><time>10:00</time><div class="what"><b>Thank-yous, next show, walk to the afterparty</b><small>Strike done and venue signed off by 11</small></div></div>
+    </div>
+    <p class="more">The full version has an owner on every line, plus the six-week countdown that leads up to it.</p>
+  </section>
+
+  <section>
+    <h2>The math, roughly</h2>
+    <p class="lead">One sold-out night, worked out from your public ticket tiers and what things cost in LA.</p>
+    <div class="math">
+      <div class="num"><strong>~$8.6K</strong><span>in from 200 tickets</span></div>
+      <div class="num"><strong>~$5.6K</strong><span>to make the night happen</span></div>
+      <div class="num sun"><strong>~$3K</strong><span>left over, before a single sponsor dollar</span></div>
+    </div>
+    <p class="fine">These are my estimates, not your books. I've brought beverage partners like Summer Club onto my own productions, and I see real room to grow with them and other local brands.</p>
+  </section>
+
+  <section>
+    <h2>Three things I'd build first</h2>
+    <div class="three">
+      <div class="thing"><span class="n">1</span><div><h3>A show playbook</h3><p>One repeatable file per Jam: countdown, cue sheet, budget. The team can run a night without you in every role.</p></div></div>
+      <div class="thing"><span class="n">2</span><div><h3>Sponsor packages</h3><p>Simple tiers, from a presenting partner down to the goodie bag. Asahi is a natural first conversation.</p></div></div>
+      <div class="thing"><span class="n">3</span><div><h3>A post-show report</h3><p>A handful of numbers within 72 hours of every show, so decisions about pricing, new dates and partners get easier each month.</p></div></div>
+    </div>
+  </section>
+
+</main>
+
+<div class="close">
+  <svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0,40 C240,80 480,0 720,30 C960,60 1200,10 1440,36 L1440,70 L0,70 Z"/></svg>
+  <div class="inner wrap">
+    <h2>There's more where this came from.</h2>
+    <p>The full budget, cue sheet and sponsor deck are ready. I'd love to walk you through them.</p>
+    <a class="pill" href="mailto:croninrcullen@gmail.com">croninrcullen@gmail.com</a>
+    <p class="contact">203.895.7712 · linktr.ee/imcronin</p>
+  </div>
+</div>
+
+
+</body>
+</html>
